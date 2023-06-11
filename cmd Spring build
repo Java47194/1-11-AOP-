@@ -1,0 +1,33 @@
+cmd Spring build
+
+1: cmd 창을 열어서 프로젝트 경로로 이동 디렉토리 목록 확인(dir)
+
+2:gradlew 파일이 존재 하는지 확인 
+  있을경우 gradlew build 명령어를 입력하여 프로젝트 빌드(명령어를 입력하면 다운로드가 됨)
+
+3. 빌드를 완료하면 build라는 새로운 디렉토리가 생김( cd build) 명령어를 통해 build 디렉토리 이동
+
+4.bulld 디렉토리에서 dir을 통해 목록 확인 후 libs디렉토리가 있다. cd libs 명령어를 통해 libs 디렉토리로 이동
+
+5. dir(목록보기)통해  프로젝트명-0.0.1-SNAPSHOT.jar 있으면 성공적으로 빌드 성공
+
+6. java -jar hello-spring-0.0.1-SNAPSHOT.jar 실행
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.12)
+
+2023-06-11 18:29:58.097  INFO 15912 --- [           main] h.hellospring.HelloSpringApplication     : Starting HelloSpringApplication using Java 11.0.14 on DESKTOP-SFFKU1E with PID 15912 (C:\study\hello-spring\hello-spring\build\libs\hello-spring-0.0.1-SNAPSHOT.jar started by lee in C:\study\hello-spring\hello-spring\build\libs)
+2023-06-11 18:29:58.108  INFO 15912 --- [           main] h.hellospring.HelloSpringApplication     : No active profile set, falling back to 1 default profile: "default"
+2023-06-11 18:30:00.079  INFO 15912 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2023-06-11 18:30:00.101  INFO 15912 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-11 18:30:00.102  INFO 15912 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-11 18:30:00.248  INFO 15912 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-11 18:30:00.250  INFO 15912 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2035 ms
+2023-06-11 18:30:00.616  INFO 15912 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-06-11 18:30:00.920  INFO 15912 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2023-06-11 18:30:00.940  INFO 15912 --- [           main] h.hellospring.HelloSpringApplication     : Started HelloSpringApplication in 3.73 seconds (JVM running for 4.474)
